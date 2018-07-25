@@ -1,0 +1,9 @@
+@import "color";
+
+@mixin vendors($name, $arg) {
+  -webkit-#{$name}: #{$arg};
+  -ms-#{$name}: #{$arg};
+  -moz-#{$name}: #{$arg};
+  -o-#{$name}: #{$arg};
+  #{$name}: #{$arg};
+}
