@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  currentDate;
+  currentTime;
+
   constructor() { }
 
   ngOnInit() {
+    this.currentDate = moment().format('dd. DD MMM YY');
+    this.currentTime = moment().format('hh:mm:ss');
   }
 
 }

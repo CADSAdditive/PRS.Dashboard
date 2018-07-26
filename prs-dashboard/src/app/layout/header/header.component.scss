@@ -1,0 +1,21 @@
+@import "../../../styles/utils";
+
+.navbar {
+  padding: 10px 30px;
+  background-color: $white;
+  box-shadow: $box-shadow;
+  height: 48px;
+  .navbar-brand {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .form-inline {
+    span {
+      margin-left: 20px;
+    }
+  }
+}
+.navbar-placeholder {
+  height: 48px;
+  width: 100%;
+}

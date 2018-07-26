@@ -1,0 +1,5 @@
+@import "../../styles/utils";
+.dashboard-container {
+  background-color: $grey_01;
+  min-height: calc(100vh - 48px);
+}
