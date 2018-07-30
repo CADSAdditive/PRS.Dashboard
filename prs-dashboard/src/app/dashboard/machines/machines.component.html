@@ -1,3 +1,21 @@
-<p>
-  machines works!
-</p>
+<div class="machine-wrapper" *ngFor="let i of machinesObject">
+  <div class="prs-header">
+    <span class="abbr bold">SLM 500</span>
+    <span class="name bold">Machine name</span>
+  </div>
+
+  <div class="col-xs-12 build-job-container">
+    <div class="build-job-container-wrapper">
+      <div class="build-job-name">
+        <span>Build job x Zeile</span>
+      </div>
+      <div class="build-status-container">
+        <div class="status-color"></div>
+        <div class="wrapper">
+          <span class="status-name">Empty Slot</span>
+          <span class="status-description"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

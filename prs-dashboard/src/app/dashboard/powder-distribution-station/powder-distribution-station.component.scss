@@ -1,0 +1,10 @@
+@import "../../../styles/utils";
+
+.not-supported-container {
+  background-color: white;
+  height: 100px;
+  box-shadow: 0 0 2px $box-shadow-headers;
+  margin: 2px;
+  padding-top: 35px;
+  text-align:center;
+}

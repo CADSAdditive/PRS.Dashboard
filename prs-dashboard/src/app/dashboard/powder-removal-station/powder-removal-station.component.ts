@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PowderRemovalStationComponent implements OnInit {
 
+  powderRemovalStationObject: any = [{}, {}, {}, {}];
+
   constructor() { }
 
   ngOnInit() {

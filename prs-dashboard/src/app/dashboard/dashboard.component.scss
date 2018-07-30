@@ -1,22 +1,43 @@
 @import "../../styles/utils";
+
+$powder-removal-station: 60%;
+$build-cylinder-magazine: 20%;
+$machines-container: 80%;
+$powder-distribution-station: 15%;
+
 .dashboard-container {
   background-color: $grey_01;
   min-height: calc(100vh - 48px);
   position: relative;
+  padding: 20px 30px;
+  min-width: 1280px;
 }
 
 .powder-removal-station {
-
+  width: $powder-removal-station;
 }
 
 .build-cylinder-magazine {
-
+  width: $build-cylinder-magazine;
+  top: 20px;
+  right: 30px;
+  position: absolute;
 }
 
 .machines-container {
-
+  width: $machines-container;
+  margin: auto;
+  display: block;
+  padding-top: 135px;
+  clear: both;
+  height: 400px;
 }
 
 .powder-distribution-station {
-
+  width: $powder-distribution-station;
+  margin-top: 20px;
+  position: relative;
+  float: left;
+  display: block;
+  clear: both;
 }

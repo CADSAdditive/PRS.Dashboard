@@ -1,3 +1,74 @@
+@import "utils";
+
 .bold {
   font-weight: bold;
+}
+
+// PRS Header
+
+.prs-header {
+  background-color: $white;
+  box-shadow: 0 0 2px $box-shadow-headers;
+  padding: 8px 16px;
+  margin: 2px;
+  .abbr {
+    color: $main_blue;
+    display: block;
+    font-size: $font-size-14px;
+  }
+  .name {
+    font-size: $font-size-16px;
+    text-transform: uppercase;
+  }
+}
+
+// Build job container
+
+.build-job-container {
+  display: inline-block;
+  padding: 2px;
+  float: left;
+  .build-job-container-wrapper {
+    background-color: $white;
+    box-shadow: 0 0 2px $box-shadow-headers;
+    padding: 5px 15px;
+    position: relative;
+    .build-job-name {
+      text-transform: uppercase;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      max-height: 48px;
+      overflow: hidden;
+    }
+    .build-status-container {
+      border: 1px solid $grey_01;
+      min-height: 80px;
+      max-height: 80px;
+      overflow: hidden;
+      margin: 5px 0px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      .status-color {
+        position: absolute;
+        left: 0;
+        width: 5px;
+        background-color: $grey_01;
+        height: 100%;
+      }
+      .wrapper {
+        margin: auto;
+        .status-name {
+          font-weight: bold;
+          display: block;
+          text-align: center;
+        }
+        .status-description {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
 }

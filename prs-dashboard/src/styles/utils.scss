@@ -1,4 +1,5 @@
 @import "color";
+@import "fonts";
 
 @mixin vendors($name, $arg) {
   -webkit-#{$name}: #{$arg};

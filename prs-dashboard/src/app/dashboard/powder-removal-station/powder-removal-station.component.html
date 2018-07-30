@@ -1,3 +1,19 @@
-<p>
-  powder-removal-station works!
-</p>
+<div class="prs-header">
+  <span class="abbr bold">SLM PRS</span>
+  <span class="name bold">Powder removal station</span>
+</div>
+
+<div class="col-xs-12 col-md-3 build-job-container" *ngFor="let i of powderRemovalStationObject">
+  <div class="build-job-container-wrapper">
+    <div class="build-job-name">
+      <span>Build job x Zeile</span>
+    </div>
+    <div class="build-status-container">
+      <div class="status-color"></div>
+      <div class="wrapper">
+        <span class="status-name">Empty Slot</span>
+        <span class="status-description"></span>
+      </div>
+    </div>
+  </div>
+</div>

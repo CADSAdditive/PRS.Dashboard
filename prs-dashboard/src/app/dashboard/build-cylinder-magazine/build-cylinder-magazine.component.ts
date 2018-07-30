@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-build-cylinder-magazine',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuildCylinderMagazineComponent implements OnInit {
 
-  constructor() { }
+  buildCylinderMagazineObject = [{}, {}, {}, {}, {}, {}];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
