@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import * as moment from 'moment';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
@@ -12,11 +11,12 @@ export class HeaderComponent implements OnInit {
   currentDate;
   currentTime;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+  }
 
   ngOnInit() {
-    this.currentDate = moment().format('dd. DD MMM YY');
-    this.currentTime = moment().format('hh:mm:ss');
+    this.currentDate = new Date().toDateString();
+    this.currentTime = new Date().toLocaleTimeString();
   }
 
 }
